@@ -323,6 +323,10 @@ p{
         margin-top: 35px;
     }
     .full h1 {
-        font-size: 35px;
+        font-size: 30px;
+    }
+
+    .one-content h1 {
+        padding-top: 50px;
     }
 }
