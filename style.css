@@ -52,17 +52,17 @@ p{
 
 .one-content {
     position: absolute;
-    top: 45%;
-    left: 45%;
-    transform: translate(-45%, -45%);
-    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .one-content h1 {
-    font-size: 80px;
+    font-size: 70px !important;
     color: bisque;
     font-weight: bolder;
     text-shadow: 2px 2px darkblue;
-    transition: 2s ease all
+    transition: 2s ease all;
+
 }
 
 .one-content h1:hover {
@@ -109,8 +109,9 @@ p{
     position: relative;
 }
 
+
 .three .card img:hover {
-    transform: scale(1.04);
+    transform: scale(1.1);
 }
 .three .card {
     border: none;
@@ -144,7 +145,7 @@ p{
     margin: 15px 0;
 }
 .four .card {
-    height: 350px;
+    height: 400px;
     border: none;
     box-shadow: 4px 4px 4px 4px rgba(128, 128, 128, 0.295);
     padding: 15px;
@@ -164,72 +165,39 @@ p{
     transform: scale(1.06);
 }
 
-.five-others .left, .five-others .right {
-    width: 40%;
-    margin: auto;
+.five .card {
+    border: none;
 }
 /* swiper */
-.swiper {
-    width:70%;
-    margin: auto;
-    height: 500px;
-  }
-  .six {
-    justify-content: space-between;
-  }
-  .swiper2 {
-      width: 30%;
-      margin: auto;
-  }
-  .swiper1 {
-    width: 70%;
+.container-swipe {
+    width: 95%;
     margin: auto;
 }
-  .swiper-slide {
-      padding: 0px 80px;
-  }
-  .swiper .card {
-      text-align: center;
-      border: none;
-  }
-
-  .swiper2 img {
-      width: 50%;
-      margin: auto;
-      /* border-radius: 50%; */
-  }
-
-  .swiper2 p {
-      text-align: justify;
-  }
-
-  .swiper2 .swiper-slide .card {
-      background-color: white;
-      box-shadow: 4px 4px 4px 4px rgba(128, 128, 128, 0.288);
-      padding: 15px 25px;
-  }
-  .swiper1 .swiper-slide .card {
-    background-color: white;
+.swiper1 {
     height: 400px;
-    box-shadow: 4px 4px 4px 4px rgba(128, 128, 128, 0.288);
-    padding: 15px 25px;
-  }
-  .swiper1 img {
-      border-radius: 10px;
-  }
+}
+.swiper1 .card {
+    margin: 10px;
+    box-shadow: 4px 4px 4px 4px rgba(128, 128, 128, 0.466);
+    
+}
 
+.swiper2 .card {
+    height: 400px;
+    margin: 10px;
+    padding-top: 35px;
+    box-shadow: 4px 4px 4px 4px rgba(128, 128, 128, 0.466);
+}
 
-  .swiper-scrollbar, .bi {
-      display: none;
-  }
-  .swiper-pagination {
-      display: none;
-  }
-
-  .seven .left, .seven .right {
-      width: 45%;
-      margin: auto;
-  }
+.swiper2 img, .swiper1 img {
+    border-radius: 5px;
+}
+.bi, .swiper-scrollbar, .swiper-pagination1 {
+    display: none;
+}
+.bi, .swiper-scrollbar, .swiper-pagination2 {
+    display: none;
+}
 
   .eight h3 {
       color: #6C757D !important;
@@ -249,16 +217,18 @@ p{
   form input[type="submit"] {
       padding: 5px 15px;
   }
+  .seven .card {
+      border: none;
+  }
   .eight .container {
       padding: 50px 0;
   }
-  .eight .left, .eight .right {
-      width: 50%;
-      margin: auto;
-      color: #6C757D;
+
+  .eight {
+      color: whitesmoke !important;
   }
-  .eight .left {
-      border-right: 1px solid white
+  .eight .card {
+      border: none;
   }
   .eight-right-content {
       width: 80%;
@@ -287,13 +257,12 @@ p{
 
 .one-about-content {
     position: absolute;
-    top: 45%;
-    left: 45%;
-    transform: translate(-45%, -45%);
-    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .one-about-content h1 {
-    font-size: 80px;
+    font-size: 70px !important;
     color: bisque;
     font-weight: bolder;
     text-shadow: 2px 2px darkblue;
@@ -317,13 +286,12 @@ p{
 
 .one-contact-content {
     position: absolute;
-    top: 45%;
-    left: 45%;
-    transform: translate(-45%, -45%);
-    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .one-contact-content h1 {
-    font-size: 80px;
+    font-size: 70px !important;
     color: bisque;
     font-weight: bolder;
     text-shadow: 2px 2px darkblue;
@@ -342,42 +310,24 @@ p{
 .five-others .left a {
     color: rgb(24, 23, 23);
 }
-.fixed .fa-solid {
-    position: fixed;
-    top: 85%;
-    left: 93%;
+.fixed-bottom .fa-solid {
     font-size: 70px;
     color:#6C757D;
     border-color: white;
     z-index: 1;
 }
-.fixed .fa-solid a {
-    color: rgb(48, 41, 3);
-    transition: all 1s ease;
-}
 
 
 
 
-
-
-
-  @media (max-width: 450px) {
-      .six {
-          flex-direction: column-reverse;
-      }
-      .swiper, .swiper2 {
-          width: 100%;
-      }
-
-  }
-
-  @media (max-width: 850px) {
-    .six {
-        flex-direction: column-reverse;
+@media (max-width:450px) {
+    .iframe {
+        display: none;
     }
-    .swiper, .swiper2 {
-        width: 100%;
+    .eight {
+        text-align: center;
     }
-
+    .eight-right-content {
+        margin-top: 35px;
+    }
 }
