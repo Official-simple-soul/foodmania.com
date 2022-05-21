@@ -51,10 +51,10 @@ p{
 }
 
 .one-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    padding-top: 15%;
 }
 .one-content h1 {
     font-size: 70px !important;
@@ -62,11 +62,6 @@ p{
     font-weight: bolder;
     text-shadow: 2px 2px darkblue;
     transition: 2s ease all;
-
-}
-
-.one-content h1:hover {
-    transform: scale(1.2);
 }
 .one-content button {
     padding: 17px 17px;
@@ -97,10 +92,6 @@ p{
     width: 100%;
     color: darkblue;
 }
-.three, .four, .five, .six, .seven {
-    transition: all ease 2s;
-}
-
 
 .three .card img {
     width: 80%;
@@ -159,7 +150,7 @@ p{
 }
 
 .four .card {
-    transition: all ease 1s;
+    transition: all ease 3s;
 }
 .four .card:hover {
     transform: scale(1.06);
@@ -305,6 +296,7 @@ p{
 .fa-brands {
     font-size: 50px;
     margin: 10px 20px;
+    color: #6C757D !important;
 }
 
 .five-others .left a {
@@ -329,5 +321,8 @@ p{
     }
     .eight-right-content {
         margin-top: 35px;
+    }
+    .full h1 {
+        font-size: 35px;
     }
 }
