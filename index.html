@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="Swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link href="css/aos.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="magicscroll/magicscroll.css"/>
+    <script type="text/javascript" src="magicscroll/magicscroll.js"></script>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/b353e23091.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,14 +16,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
     <title>FoodMania</title>
 </head>
+<style>
+
+</style>
 <body>
 <div class="full">
     <div class="fixed-bottom">
         <a href="#top"><i class="fa-solid fa-circle-arrow-up"></i></a>
     </div>
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <nav class="navbar navbar-expand-lg bg-light navbar-light fixed-top">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">FoodMania <i class="fa-solid fa-kitchen-set"></i></a>
+          <a class="navbar-brand fs-4 fw-bold" href="#">FoodMania <i class="fa-solid fa-kitchen-set text-secondary fs-3"></i></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -37,7 +42,7 @@
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Check Branch List
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <ul class="dropdown-menu border-0" aria-labelledby="navbarDropdown">
                   <li><a class="dropdown-item" href="#">Ikeja Branch</a></li>
                   <li><a class="dropdown-item" href="#">Uyo Branch</a></li>
                   <li><a class="dropdown-item" href="#">Eket Branch</a></li>
@@ -58,94 +63,105 @@
           </div>
         </div>
     </nav>
-    <section class="one bg-image">
-        <div class="one-content text-center" data-aos="zoom-in" data-aos-duration="1500">
-            <h1 class="fs-1">FOOD AT YOUR DOOR STEP</h1>
-            <button class="mt-5">Make your order now!!!</button>
+    <section class="one bg-image" style="height: 100vh; padding-top: 15%;">
+        <div class="one-content text-start text-sm-center text-md-start px-5 mx-auto" style="padding-top: 12%; width: 85%;" data-aos="zoom-out" data-aos-duration="1500">
+            <h1 class="fw-bold text-light display-4">FOOD AT YOUR DOOR<br> STEP</h1>
+            <button class="mt-3 btn btn-secondary bg-transparent py-3 border-light border-3 position-relative fw-bold">Make your order now!!!</button>
         </div>
     </section>
     <section class="two py-5 text-center bg-light">
-        <div class="container">
-            <h2>WHAT WE DO</h2>
-            <p>FoodMania is a leading global online food delivery company, connecting tens of thousands of consumers with over 600 local restaurants through our websites and apps. We offer an online marketplace where consumers, food businesses, and delivery agents meet in major cities of Nigeria.
+        <div class="container-fluid row">
+            <div class="col-lg-4 col-md-12 col-sm-12 mx-auto">
+                <div class="card border-0 shadow rounde-3" data-aos="fade-up" data-aos-duration="2000">
+                <h2 class="border border-1 px-0 py-4 fw-bold" style="background-color: #f7dca89a;">WHAT WE DO</h2>
+                <p>FoodMania is a leading global online food delivery company, connecting tens of thousands of consumers with over 600 local restaurants through our websites and apps. We offer an online marketplace where consumers, food businesses, and delivery agents meet in major cities of Nigeria.
                 As an online food delivery marketplace, FoodMania facilitates the online ordering, payment and occasionally, fulfillment of orders. We utilize a hybrid model which builds on our marketplace heritage (where restaurants do their own delivery) and we are working on logistics capability (for select restaurants without their own delivery capabilities). This model ensures consumers have the widest possible variety of restaurants to order from.
-            </p>
-            <p>
-                Consumers can order via our mobile applications and our website. We derive our revenue principally from the commissions we charge restaurants based on the revenue generated from the food ordered through our marketplace and, to a lesser extent, from the service fee charged to customers per order.
-            </p>
+                </p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12 mx-auto">
+                <div class="card border-0 rounde-3 shadow" style="background-color: #f7dba89a;" data-aos="fade-down" data-aos-duration="2000">
+                <div class="d-flex flex-wrap justify-content-center">
+                    <img src="img\pexels-chitokan-2087748.jpg" alt="" width="40%" class="my-3 mx-2 rounded-3">
+                    <img src="img\pexels-craig-adderley-2449454.jpg" alt="" width="40%" class="my-3 mx-2 rounded-3">
+                    <img src="img\pexels-asad-photo-maldives-169190.jpg" alt="" width="40%" class="my-3 mx-2 rounded-3">
+                    <img src="img\pexels-nerfee-mirandilla-3186654.jpg" alt="" width="40%" class="my-3 mx-2 rounded-3">
+                </div>
+                </div>
+            </div>
         </div>
     </section>
     <section class="three pt-4">
     <div class="container">
-        <h2 class="text-center mb-4">How can we serve you</h2>
+        <h2 class="text-center mb-4 border-0 px-0 py-4 fw-bold">How can we serve you</h2>
         <div class="row flex-wrap">
             <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="card" data-aos="zoom-in" data-aos-duration="2000">
-                    <img src="img\pexels-rocsana-nicoleta-gurza-948185.jpg" alt="">
-                    <h4>Wedding</h4>
+                <div class="card border-0 text-center mb-2 image-fluid" data-aos="zoom-in" data-aos-duration="2000">
+                    <img src="img\pexels-rocsana-nicoleta-gurza-948185.jpg" alt="" class="mb-3">
+                    <h4 class="position-absolute text-light">Wedding</h4>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="card" data-aos="zoom-in-left" data-aos-duration="2000">
-                    <img src="img\pexels-rodrigo-souza-2531546.jpg" alt="">
-                    <h4>Birthday</h4>
+                <div class="card border-0 text-center mb-2 image-fluid" data-aos="zoom-in-left" data-aos-duration="2000">
+                    <img src="img\pexels-rodrigo-souza-2531546.jpg" alt="" class="mb-3">
+                    <h4 class="position-absolute text-light">Birthday</h4>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="card" data-aos="zoom-in-right" data-aos-duration="2000">
-                    <img src="img\pexels-roberto-nickson-3554424.jpg" alt="">
-                    <h4>House Warming</h4>
+                <div class="card border-0 text-center mb-2 image-fluid" data-aos="zoom-in-right" data-aos-duration="2000">
+                    <img src="img\pexels-roberto-nickson-3554424.jpg" alt="" class="mb-3">
+                    <h4 class="position-absolute text-light">House Warming</h4>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="card" data-aos="zoom-out" data-aos-duration="2000">
-                    <img src="img\pexels-christina-morillo-1181395.jpg" alt="">
-                    <h4>Conference</h4>
+                <div class="card border-0 text-center mb-2 image-fluid" data-aos="zoom-out" data-aos-duration="2000">
+                    <img src="img\pexels-christina-morillo-1181395.jpg" alt="" class="mb-3">
+                    <h4 class="position-absolute text-light">Conference</h4>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="card" data-aos="zoom-out-up" data-aos-duration="2000">
-                    <img src="img\pexels-mat-brown-1395967.jpg" alt="">
-                    <h4>Dinner</h4>
+                <div class="card border-0 text-center mb-2 image-fluid" data-aos="zoom-out-up" data-aos-duration="2000">
+                    <img src="img\pexels-mat-brown-1395967.jpg" alt="" class="mb-3">
+                    <h4 class="position-absolute text-light">Dinner</h4>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="card" data-aos="zoom-out-down" data-aos-duration="2000">
-                    <img src="img\pexels-cottonbro-3171830.jpg" alt="">
-                    <h4>Party</h4>
+                <div class="card border-0 text-center mb-2 image-fluid" data-aos="zoom-out-down" data-aos-duration="2000">
+                    <img src="img\pexels-cottonbro-3171830.jpg" alt="" class="mb-3">
+                    <h4 class="position-absolute text-light">Party</h4>
                 </div>
             </div>
         </div>
     </div>
     </section>
-    <section class="four bg-light py-5">
+    <section class="four bg-light py-5 px-4">
         <div class="container">
             <h2 class="text-center mb-5">How it works</h2>
-            <div class="row">
+            <div class="row text-center">
                 <div class="col-lg-3 col-md-6 col-sm-12">
-                    <div class="card" data-aos="fade-up" data-aos-duration="2000">
-                        <i class="fa-solid fa-calendar"></i>
+                    <div class="card border-0 p-3 shadow mb-5" style="height: 350px; background-color: #f7dba89a;" data-aos="fade-up" data-aos-duration="2000">
+                        <i class="fa-solid fa-calendar fs-1 display-1 text-center my-3"></i>
                         <h5>Choose your event</h5>
                         <p>Navigate around the website to choose the event you want us to provide our service for. We offer our services for all kind of event you have in mind</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-12">
-                    <div class="card" data-aos="fade-down" data-aos-duration="2000">
-                        <i class="fa-solid fa-hand-holding-dollar"></i>
+                    <div class="card border-0 p-3 shadow mb-5" style="height: 350px; background-color: #f7dba89a;" data-aos="fade-down" data-aos-duration="2000">
+                        <i class="fa-solid fa-hand-holding-dollar fs-1 display-1 text-center my-3"></i>
                         <h5>Check our price list</h5>
                         <p>Based on the event you select, there are several options for you to decide on whichever you will be prefering from us ranging from tier 5 to 1 </p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-12">
-                    <div class="card" data-aos="fade-up" data-aos-duration="2000">
-                        <i class="fa-solid fa-align-justify"></i>
+                    <div class="card border-0 p-3 shadow mb-5" style="height: 350px; background-color: #f7dba89a;" data-aos="fade-up" data-aos-duration="2000">
+                        <i class="fa-solid fa-align-justify fs-1 display-1 text-center my-3"></i>
                         <h5>Fill up the form in the GET-2-US section and submit</h5>
                         <p>After confirming our price list as you seem to be satisfied. You are to navigate to the <a href="#">GET-2-US</a> section to fill up the form which include your details, request and event location </p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-12">
-                    <div class="card" data-aos="fade-down" data-aos-duration="2000">
-                        <i class="fa-solid fa-money-bill-1-wave"></i>
+                    <div class="card border-0 p-3 shadow mb-5" style="height: 350px; background-color: #f7dba89a;" data-aos="fade-down" data-aos-duration="2000">
+                        <i class="fa-solid fa-money-bill-1-wave fs-1 display-1 text-center my-3"></i>
                         <h5>Make payment</h5>
                         <p>Make your payment via any of the options provided in the payment sections. Expect a feedback from us within 2 hours after your payment is successful.<br> Get ready to get your event experience the best meal of a life-time </p>
                     </div>
@@ -153,46 +169,47 @@
             </div>
         </div>
     </section>
-    <section class="five py-5 text-center">
-        <div class="container">
-            <h2>ABOUT FOODMANIA</h2>
-            <p>FoodMania is a leading global online food delivery company, connecting tens of thousands of consumers with over 600 local restaurants through our websites and apps. We offer an online marketplace where consumers, food businesses, and delivery agents meet in major cities of Nigeria.
-                As an online food delivery marketplace, FoodMania facilitates the online ordering, payment and occasionally, fulfillment of orders. We utilize a hybrid model which builds on our marketplace heritage (where restaurants do their own delivery) and we are working on logistics capability (for select restaurants without their own delivery capabilities). This model ensures consumers have the widest possible variety of restaurants to order from.
-            </p>
-            <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-12">
-                    <div class="card">
-                        <h5>Our Vision <i class="fa-solid fa-glasses"></i></h5>
-                        <p>
-                            Consumers can order via our mobile applications and our website. We derive our revenue principally from the commissions we charge restaurants based on the revenue generated from the food ordered through our marketplace and, to a lesser extent, from the service fee charged to customers per order.
-                        </p>
-                    </div>
+    <section class="two py-5 text-center bg-light">
+        <div class="container-fluid row">
+            <div class="col-lg-4 col-md-12 col-sm-12 mx-auto">
+                <div class="card border-0 shadow rounde-3" data-aos="fade-up" data-aos-duration="2000">
+                <h2 class="border border-1 px-0 py-4 fw-bold" style="background-color: #f7dca89a;">ABOUT FOODMANIA</h2>
+                <p>FoodMania is a leading global online food delivery company, connecting tens of thousands of consumers with over 600 local restaurants through our websites and apps. We offer an online marketplace where consumers, food businesses, and delivery agents meet in major cities of Nigeria.
+                    As an online food delivery marketplace, FoodMania facilitates the online ordering, payment and occasionally, fulfillment of orders. We utilize a hybrid model which builds on our marketplace heritage (where restaurants do their own delivery) and we are working on logistics capability (for select restaurants without their own delivery capabilities). This model ensures consumers have the widest possible variety of restaurants to order from.    
+                </p>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12">
-                    <div class="card">
-                        <h5>Our Mission <i class="fa-solid fa-person-circle-question"></i></h5>
-                        <p>
-                            Consumers can order via our mobile applications and our website. We derive our revenue principally from the commissions we charge restaurants based on the revenue generated from the food ordered through our marketplace and, to a lesser extent, from the service fee charged to customers per order.
-                        </p>
-                    </div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12 mx-auto">
+                <div class="card bg-light border-0" data-aos="fade-down" data-aos-duration="2000">
+                <div class="d-flex flex-wrap justify-content-center">
+                    <h5 class="mx-3 p-4 border border-1 bg-waring" data-aos="fade-right" data-aos-duration="2000" style="background-color: #f7dba89a; border-radius: 25px;">Governor's Consent</h5>
+                    <h5 class="mx-3 p-4 border border-1 bg-waring" data-aos="fade-left" data-aos-duration="2000" style="background-color: #f7dba89a; border-radius: 25px">Since 1998</h5>
+                    <h5 class="mx-3 p-4 border border-1 bg-waring" data-aos="fade-right" data-aos-duration="2000" style="background-color: #f7dba89a; border-radius: 25px">69 Take of Branches</h5>
+                    <h5 class="mx-3 p-4 border border-1 bg-waring" data-aos="fade-left" data-aos-duration="2000" style="background-color: #f7dba89a; border-radius: 25px">gateWay Achiever</h5>
+                    <h5 class="mx-3 p-4 border border-1 bg-waring" data-aos="fade-right" data-aos-duration="2000" style="background-color: #f7dba89a; border-radius: 25px">CAC Certificate registered</h5>
+                    <h5 class="mx-3 p-4 border border-1 bg-waring" data-aos="fade-left" data-aos-duration="2000"style="background-color: #f7dba89a; border-radius: 25px">NAFDAC Registered</h5>
+                    <h5 class="mx-3 p-4 border border-1 bg-waring" data-aos="fade-right" data-aos-duration="2000" style="background-color: #f7dba89a; border-radius: 25px">NAFF Member</h5>
+                    <h5 class="mx-3 p-4 border border-1 bg-waring" data-aos="fade-left" data-aos-duration="2000" style="background-color: #f7dba89a; border-radius: 25px">Insurance Member</h5>
+                </div>
+                </div>
                 </div>
             </div>
         </div>
     </section>
     <section class="six bg-light py-5">
-        <div class="container-swipe">
+        <div class="container-swipe mx-auto" style="width: 95%;">
         <div class="row">
             <div class="col-lg-3 col-md-6 col-sm-12 px-4">
                 <h5 class="text-center mt-3">Comments and Feedbacks</h5>
-                <div class="swiper swiper1 text-center" data-aos="zoom-in" data-aos-duration="2000">
+                <div class="swiper swiper1 text-center" data-aos="zoom-in" data-aos-duration="2000" style="height: 400px;">
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
                       <!-- Slides -->
                       <div class="swiper-slide">
                         <div class="row">
                             <div class="col-lg">
-                                <div class="card py-4 px-5 border-0 bg-light">
-                                    <img src="img\face8.jpg" alt="" width="40%" class="mx-auto">
+                                <div class="card py-4 px-5 border-0 bg-light my-3 mx-3 shadow">
+                                    <img src="img\face8.jpg" alt="" width="40%" class="mx-auto rounded-3">
                                         <h5 class="py-4"><u>Shola Fumnilayo</u></h5>
                                         <p>
                                             There's been no comment so far from police about the allegations.
@@ -204,8 +221,8 @@
                       <div class="swiper-slide">
                         <div class="row">
                             <div class="col">
-                                <div class="card py-4 px-5 border-0 bg-light">
-                                    <img src="img\face2.jfif" alt="" width="40%" class="mx-auto">
+                                <div class="card py-4 px-5 border-0 bg-light my-3 mx-3 shadow">
+                                    <img src="img\face2.jfif" alt="" width="40%" class="mx-auto rounded-3">
                                         <h5 class="py-4"><u>Shola Fumnilayo</u></h5>
                                         <p>He made his comments at a news conference in Amsterdam.
                                             I was wondering whether you had any comments about that?
@@ -217,8 +234,8 @@
                       <div class="swiper-slide">
                         <div class="row">
                             <div class="col">
-                                <div class="card py-4 px-5 border-0 bg-light">
-                                    <img src="img\face3.jpg" alt="" width="40%" class="mx-auto">
+                                <div class="card py-4 px-5 border-0 bg-light my-3 mx-3 shadow">
+                                    <img src="img\face3.jpg" alt="" width="40%" class="mx-auto rounded-3">
                                         <h5 class="py-4"><u>Asuqua Akanp</u></h5>
                                         <p>He made his comments at a news conference in Amsterdam.
                                             I was wondering whether you had any comments about that?
@@ -230,8 +247,8 @@
                       <div class="swiper-slide">
                         <div class="row">
                             <div class="col">
-                                <div class="card py-4 px-5 border-0 bg-light">
-                                    <img src="img\face4.jpg" alt="" width="40%" class="mx-auto">
+                                <div class="card py-4 px-5 border-0 bg-light my-3 mx-3 shadow">
+                                    <img src="img\face4.jpg" alt="" width="40%" class="mx-auto rounded-3">
                                         <h5 class="py-4"><u>Obi Cubana</u></h5>
                                         <p>
                                             There's been no comment so far from police about the allegations.
@@ -243,8 +260,8 @@
                       <div class="swiper-slide">
                         <div class="row">
                             <div class="col">
-                                <div class="card py-4 px-5 border-0 bg-light">
-                                    <img src="img\face5.jpg" alt="" width="40%" class="mx-auto">
+                                <div class="card py-4 px-5 border-0 bg-light my-3 mx-3 shadow">
+                                    <img src="img\face5.jpg" alt="" width="40%" class="mx-auto rounded-3">
                                         <h5 class="py-4"><u>Obika Chuks</u></h5>
                                         <p>He made his comments at a news conference in Amsterdam.
                                             I was wondering whether you had any comments about that?
@@ -256,8 +273,8 @@
                       <div class="swiper-slide">
                         <div class="row">
                             <div class="col">
-                                <div class="card py-4 px-5 border-0 bg-light">
-                                    <img src="img\face6.jpg" alt="" width="40%" class="mx-auto">
+                                <div class="card py-4 px-5 border-0 bg-light my-3 mx-3 shadow">
+                                    <img src="img\face6.jpg" alt="" width="40%" class="mx-auto rounded-3">
                                         <h5 class="py-4"><u>Umar Danladi</u></h5>
                                         <p>He made his comments at a news conference in Amsterdam.
                                             The Prime Minister, who is abroad, was not available for comment.</p>
@@ -268,8 +285,8 @@
                       <div class="swiper-slide">
                         <div class="row">
                             <div class="col">
-                                <div class="card py-4 px-5 border-0 bg-light">
-                                    <img src="img\face7.jpg" alt="" width="40%" class="mx-auto">
+                                <div class="card py-4 px-5 border-0 bg-light my-auto mx-auto shadow">
+                                    <img src="img\face7.jpg" alt="" width="40%" class="mx-auto rounded-3">
                                         <h5 class="py-4"><u>Grace Ngozie</u></h5>
                                         <p>
                                             There's been no comment so far from police about the allegations.
@@ -280,16 +297,16 @@
                       </div>
                     </div>
                     <!-- If we need pagination -->
-                    <div class="swiper-pagination swiper-pagination1"></div>
+                    <div class="swiper-pagination swiper-pagination1 d-none"></div>
                   
                     <!-- If we need navigation buttons -->
-                    <div class="bi">
+                    <div class="bi d-none">
                         <div class="swiper-button-prev"></div>
                         <div class="swiper-button-next"></div>
                     </div>
                   
                     <!-- If we need scrollbar -->
-                    <div class="swiper-scrollbar"></div>
+                    <div class="swiper-scrollbar d-none"></div>
                   </div>
             </div>
             <div class="col-lg-9 col-md-6 col-sm-12 text-center px-4">
@@ -301,10 +318,10 @@
                       <div class="swiper-slide">
                         <div class="row">
                             <div class="col">
-                                <div class="card border-0 bg-light">
+                                <div class="card border-0 bg-light mx-3 my-3 pt-5 shadow" style="height: 400px;">
                                     <h5 class="mt-3">16th March 2022</h5>
                                     <p>Chief Adekanbi's Funeral</p>
-                                    <img src="img\jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="" class="mt-4 mx-auto" width="50%">
+                                    <img src="img\jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="" class="mt-4 mx-auto rounded-3" width="70%">
                                 </div>
                             </div>
                         </div>
@@ -312,10 +329,10 @@
                       <div class="swiper-slide">
                         <div class="row">
                             <div class="col">
-                                <div class="card border-0 bg-light">
+                                <div class="card border-0 bg-light mx-3 my-3 pt-5 shadow" style="height: 400px;">
                                     <h5 class="mt-3">24th March 2022</h5>
                                     <p>Presidential Summit</p>
-                                    <img src="img\pexels-pavel-danilyuk-8761557.jpg" alt="" class="mt-4 mx-auto" width="50%">
+                                    <img src="img\pexels-pavel-danilyuk-8761557.jpg" alt="" class="mt-4 mx-auto rounded-3" width="70%">
                                 </div>
                             </div>
                         </div>
@@ -323,10 +340,10 @@
                       <div class="swiper-slide">
                         <div class="row">
                             <div class="col">
-                                <div class="card border-0 bg-light">
+                                <div class="card border-0 bg-light mx-3 my-3 pt-5 shadow" style="height: 400px;">
                                     <h5 class="mt-3">3rd April 2022</h5>
                                     <p>Governor Obaseki Daugther's Wedding</p>
-                                    <img src="img\pexels-nerfee-mirandilla-3186654.jpg" alt="" class="mt-4 mx-auto" width="50%">
+                                    <img src="img\pexels-nerfee-mirandilla-3186654.jpg" alt="" class="mt-4 mx-auto rounded-3" width="70%">
                                 </div>
                             </div>
                         </div>
@@ -334,63 +351,165 @@
                       <div class="swiper-slide">
                         <div class="row">
                             <div class="col">
-                                <div class="card border-0 bg-light">
+                                <div class="card border-0 bg-light mx-3 my-3 pt-5 shadow" style="height: 400px;">
                                     <h5 class="mt-3">16 April 2022</h5>
                                     <p>Dinner with Governor Akeredolu</p>
-                                    <img src="img\pexels-asad-photo-maldives-169190.jpg" alt="" class="mt-4 mx-auto" width="50%">
+                                    <img src="img\pexels-asad-photo-maldives-169190.jpg" alt="" class="mt-4 mx-auto rounded-3" width="70%">
                                 </div>
                             </div>
                         </div>
                       </div>
                     </div>
                     <!-- If we need pagination -->
-                    <div class="swiper-pagination swiper-pagination2"></div>
+                    <div class="swiper-pagination swiper-pagination2 d-none"></div>
                   
                     <!-- If we need navigation buttons -->
-                    <div class="bi">
+                    <div class="bi d-none">
                         <div class="swiper-button-prev"></div>
                         <div class="swiper-button-next"></div>
                     </div>
                     <!-- If we need scrollbar -->
-                    <div class="swiper-scrollbar"></div>
+                    <div class="swiper-scrollbar d-none"></div>
                   </div>
             </div>
         </div>
         </div>
     </section>
-    <section class="seven py-5">
-        <div class="container">
+    <section class="nine">
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-12">
-                    <div class="card pt-5 mx-auto">
-                        <h5>Find out our locations on Google map</h5>
-                        <form action="">
-                            <label for="name">Full Name</label><br>
-                            <input type="name"><br>
-                            <label for="location">Enter Location</label><br>
-                            <input type="Location"><br>
-                            <input type="Submit" value="Search">
-                        </form>
+                <div class="col-lg-9 col-md-8 col-md-12">
+                    <div class="card text-center border-0" style="height: 400px; width: 100%;" data-aos="zoom-in" data-aos-duration="2000">
+                        <h1 class="pt-4">Meet the Team</h1>
+                        <div class="MagicScroll bg-transparent border-0" data-options="step: 0; autoplay; speed: 4000; mode: carousel; height: 250px">
+                            <div class="image1 py-5">
+                                <h6>Peter hompson</h6>
+                                <img src="img\team1.jpg"/>
+                            </div>
+                            <div class="image1 py-5">
+                                <h6>Phemmy Blaze</h6>
+                                <img src="img\team2.jpg" width="90%"/>
+                            </div>
+                            <div class="image1 py-5">
+                                <h6>Natacha Blaise</h6>
+                                <img src="img\team5.png"/>
+                            </div>
+                            <div class="image1 py-5">
+                                <h6>Safe Square</h6>
+                                <img src="img\team6.jpg"/>
+                            </div>
+                            <div class="image1 py-5">
+                                <h6>Safe Square</h6>
+                                <img src="img\team7.jpg"/>
+                            </div>
+                            <div class="image1 py-5">
+                                <h6>Safe Square</h6>
+                                <img src="img\team8.jpg"/>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-6">
-                    <div class="card">
+                <div class="col-lg-3 col-md-4 col-md-12">
+                    <div class="card border-5 shadow pb-3" data-aos="zoom-in" data-aos-duration="2000">
+                        <div class="row flex-column">
+                            <div class="col">
+                                <div class="card border-0 pb-3" style="height: 200px; width: 100%;">
+                                    <div class="swiper swiper4">
+                                        <!-- Additional required wrapper -->
+                                        <div class="swiper-wrapper">
+                                          <!-- Slides -->
+                                          <div class="swiper-slide"><img src="img\flash2.png" alt="" width="90%" class="mx-auto"></div>
+                                          <div class="swiper-slide"><img src="img\flash3.png" alt="" width="90%" class="mx-auto"></div>
+                                          <div class="swiper-slide"><img src="img\flash2.png" alt="" width="90%" class="mx-auto"></div>
+                                          ...
+                                        </div>
+                                        <!-- If we need pagination -->
+                                        <div class="swiper-pagination swiper-pagination4 d-none"></div>
+                                      
+                                        <!-- If we need navigation buttons -->
+                                        <div class="bi d-none">
+                                        <div class="swiper-button-prev"></div>
+                                        <div class="swiper-button-next"></div>
+                                        </div>
+                                      
+                                        <!-- If we need scrollbar -->
+                                        <div class="swiper-scrollbar d-none"></div>
+                                      </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card border-0 mx-auto text-center" style="height: 200px; width: 100%;">
+                                    <div class="swiper swiper5">
+                                        <!-- Additional required wrapper -->
+                                        <div class="swiper-wrapper">
+                                          <!-- Slides -->
+                                          <div class="swiper-slide mx-auto"><img src="img\chad-montano--GFCYhoRe48-unsplash.jpg" alt="" width="50%" class="mx-auto image-fluid"></div>
+                                          <div class="swiper-slide"><img src="img\pexels-rodnae-productions-6646073.jpg" alt="" width="50%" class="mx-auto image-fluid"></div>
+                                          <div class="swiper-slide"><img src="img\eaters-collective-pLKgCsBOiw4-unsplash.jpg" alt="" width="50%" class="mx-auto image-fluid"></div>
+                                          ...
+                                        </div>
+                                        <!-- If we need pagination -->
+                                        <div class="swiper-pagination swiper-pagination5 d-none"></div>
+                                      
+                                        <!-- If we need navigation buttons -->
+                                        <div class="bi d-none">
+                                        <div class="swiper-button-prev"></div>
+                                        <div class="swiper-button-next"></div>
+                                        </div>
+                                      
+                                        <!-- If we need scrollbar -->
+                                        <div class="swiper-scrollbar d-none"></div>
+                                      </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="seven py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 bg-light">
+                    <div class="card pt-5 mx-auto border-0 bg-light">
+                        <h5>Find out our locations on Google map</h5>
+                        <form class="bg-light">
+                            <div class="mb-3">
+                              <label for="exampleInputEmail1" class="form-label">Full Name</label>
+                              <input type="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                            </div>
+                            <div class="mb-3">
+                              <label for="exampleInputPassword1" class="form-label">Location</label>
+                              <input type="text" class="form-control" id="exampleInputPassword1">
+                            </div>
+                            <div class="mb-3 form-check">
+                              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                            </div>
+                            <button type="submit" class="btn btn-secondary border-0" style="background-color:#aa9061;">Submit</button>
+                          </form>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 bg-light">
+                    <div class="card border-0 bg-light">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d214019.73891255585!2d7.74838587644743!3d4.633641693777217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1067c2bebd34d48b%3A0xe2be48c617d33fa0!2sEket!5e0!3m2!1sen!2sng!4v1653043987853!5m2!1sen!2sng" width="350" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mx-auto iframe" ></iframe>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="eight bg-dark">
-        <div class="container">
-            <h3>Contact US</h3>
-            <div class="row">
+    <section class="eight bg-dark" >
+        <div class="container py-5">
+            <h3 class="text-secondary">Contact US</h3>
+            <div class="row text-light">
                 <div class="col-lg-6 col-md-6 col-sm-12">
-                    <div class="card bg-dark">
+                    <div class="card bg-dark border-0">
                             <h5>Reach out to us today</h5>
                             <form action="">
                                 <label for="name">Full Name</label><br>
-                                <input type="name"><br>
+                                <input type="name" class="bg-light"><br>
                                 <label for="e-mail">E-mail Address</label><br>
                                 <input type="e-mail"><br>
                                 <textarea name="" id="" cols="30" rows="5" class="mt-4">write out your enquiries</textarea><br>
@@ -399,8 +518,8 @@
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12">
-                    <div class="card bg-dark">
-                            <div class="eight-right-content">
+                    <div class="card bg-dark border-0">
+                            <div class="eight-right-content mx-auto" style="width: 80%;">
                                 <h4>Head Office</h4>
                                 <address class="mt-2"><i class="fa-solid fa-location-dot"></i> No. 1 ACAEDF crescent, Ikot-Afaha, Eket, Akwa-Ibom</address>
                                 <p class="mt-2"><i class="fa-solid fa-phone"></i> 08139781147 or +1 888267</p>
@@ -414,9 +533,9 @@
         </div>
     </section>
     <footer>
-        <nav class="navbar navbar-expand-lg navbar-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light border-top border-light">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">FoodMania <i class="fa-solid fa-kitchen-set"></i></a>
+              <a class="navbar-brand fs-4 fw-bold text-secondary" href="#">FoodMania <i class="fa-solid fa-kitchen-set text-secondary fs-3"></i></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -447,6 +566,7 @@
     <script src="js/aos.js"></script>
     <script src="Swiper/swiper-bundle.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
     <script src="index.js"></script>
     <script>
         AOS.init();

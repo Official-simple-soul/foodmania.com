@@ -1,72 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Swiper/swiper-bundle.min.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/b353e23091.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
-    <title>FoodMania</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link href="css/aos.css" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="magicscroll/magicscroll.css"/>
+  <script type="text/javascript" src="magicscroll/magicscroll.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/b353e23091.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+  <title>FoodMania</title>
 </head>
+<style>
+.one-about {
+    background-image: url(img/pexels-ella-olsson-1640777.jpg);
+    opacity: .85;
+    background-position: right;
+    background-size: cover;
+}
+.one-about-content h1 {
+    text-shadow: 2px 2px darkblue;
+}
+  </style>
 <body>
-    <div class="fixed">
-        <a href="#top"><i class="fa-solid fa-circle-arrow-up"></i></a>
-    </div>
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">FoodMania <i class="fa-solid fa-kitchen-set"></i></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="index.html"><i class="fa-solid fa-house"></i> Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html"><i class="fa-solid fa-address-card"></i> About</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Check Branch List
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Ikeja Branch</a></li>
-                  <li><a class="dropdown-item" href="#">Uyo Branch</a></li>
-                  <li><a class="dropdown-item" href="#">Eket Branch</a></li>
-                  <li><a class="dropdown-item" href="#">Ibadan Branch</a></li>
-                  <li><a class="dropdown-item" href="#">Abuja Branch</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Place you order</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html"><i class="fa-solid fa-address-book"></i> Contact</a>
-              </li>
+  <div class="fixed-bottom">
+    <a href="#top"><i class="fa-solid fa-circle-arrow-up"></i></a>
+</div>
+<nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand fs-4 fw-bold" href="#">FoodMania <i class="fa-solid fa-kitchen-set text-secondary fs-3"></i></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html"><i class="fa-solid fa-address-card"></i> About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Check Branch List
+            </a>
+            <ul class="dropdown-menu border-0" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Ikeja Branch</a></li>
+              <li><a class="dropdown-item" href="#">Uyo Branch</a></li>
+              <li><a class="dropdown-item" href="#">Eket Branch</a></li>
+              <li><a class="dropdown-item" href="#">Ibadan Branch</a></li>
+              <li><a class="dropdown-item" href="#">Abuja Branch</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Place you order</a></li>
             </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search for Food" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
-        </div>
-    </nav>
-    <section class="one-about bg-image">
-        <div class="one-about-content text-center" data-aos="zoom-in" data-aos-duration="1500">
-            <h1 class="fs-1">ABOUT US</h1>
-        </div>
-    </section>
-    <section class="five py-5 text-center">
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html"><i class="fa-solid fa-address-book"></i> Contact</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search for Food" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+</nav>
+<section class="one-about bg-image" style="height: 100vh; padding-top: 15%;">
+    <div class="one-about-content text-start text-sm-center text-md-start px-5 mx-auto" style="padding-top: 12%; width: 85%;" data-aos="zoom-out" data-aos-duration="1500">
+        <h1 class="fw-bold text-light display-1">ABOUT</h1>
+    </div>
+</section>
+    <section class="five py-5 text-center bg-light">
       <div class="container">
-          <h2>ABOUT FOODMANIA</h2>
+        <div class="row py-5">
+        <div class="col-lg-4 col-md-12 col-sm-12 mx-auto">
+          <div class="card border-0 shadow rounde-3" data-aos="fade-up" data-aos-duration="2000">
+          <h2 class="border border-1 px-0 py-4 fw-bold" style="background-color: #f7dca89a;">ABOUT FOODMANIA</h2>
           <p>FoodMania is a leading global online food delivery company, connecting tens of thousands of consumers with over 600 local restaurants through our websites and apps. We offer an online marketplace where consumers, food businesses, and delivery agents meet in major cities of Nigeria.
-              As an online food delivery marketplace, FoodMania facilitates the online ordering, payment and occasionally, fulfillment of orders. We utilize a hybrid model which builds on our marketplace heritage (where restaurants do their own delivery) and we are working on logistics capability (for select restaurants without their own delivery capabilities). This model ensures consumers have the widest possible variety of restaurants to order from.
+              As an online food delivery marketplace, FoodMania facilitates the online ordering, payment and occasionally, fulfillment of orders. We utilize a hybrid model which builds on our marketplace heritage (where restaurants do their own delivery) and we are working on logistics capability (for select restaurants without their own delivery capabilities). This model ensures consumers have the widest possible variety of restaurants to order from.    
           </p>
+          </div>
+      </div>
+      <div class="col-lg-6 col-md-12 col-sm-12 mx-auto">
+          <div class="card bg-light border-0" data-aos="fade-down" data-aos-duration="2000">
+          <div class="d-flex flex-wrap justify-content-center">
+              <h5 class="mx-3 p-4 border border-1 bg-waring" data-aos="fade-right" data-aos-duration="2000" style="background-color: #f7dba89a; border-radius: 25px;">Governor's Consent</h5>
+              <h5 class="mx-3 p-4 border border-1 bg-waring" data-aos="fade-left" data-aos-duration="2000" style="background-color: #f7dba89a; border-radius: 25px">Since 1998</h5>
+              <h5 class="mx-3 p-4 border border-1 bg-waring" data-aos="fade-right" data-aos-duration="2000" style="background-color: #f7dba89a; border-radius: 25px">69 Take of Branches</h5>
+              <h5 class="mx-3 p-4 border border-1 bg-waring" data-aos="fade-left" data-aos-duration="2000" style="background-color: #f7dba89a; border-radius: 25px">gateWay Achiever</h5>
+              <h5 class="mx-3 p-4 border border-1 bg-waring" data-aos="fade-right" data-aos-duration="2000" style="background-color: #f7dba89a; border-radius: 25px">CAC Certificate registered</h5>
+              <h5 class="mx-3 p-4 border border-1 bg-waring" data-aos="fade-left" data-aos-duration="2000"style="background-color: #f7dba89a; border-radius: 25px">NAFDAC Registered</h5>
+              <h5 class="mx-3 p-4 border border-1 bg-waring" data-aos="fade-right" data-aos-duration="2000" style="background-color: #f7dba89a; border-radius: 25px">NAFF Member</h5>
+              <h5 class="mx-3 p-4 border border-1 bg-waring" data-aos="fade-left" data-aos-duration="2000" style="background-color: #f7dba89a; border-radius: 25px">Insurance Member</h5>
+          </div>
+          </div>
+          </div>
+      </div>
+    </div>
+    <div class="container">
           <div class="row">
               <div class="col-lg-6 col-md-6 col-sm-12">
                   <div class="card">
@@ -87,71 +123,76 @@
           </div>
       </div>
     </section>
-    <section class="eight bg-dark">
-        <div class="container">
-            <h3>Contact US</h3>
-            <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-12">
-                    <div class="card bg-dark">
-                            <h5>Reach out to us today</h5>
-                            <form action="">
-                                <label for="name">Full Name</label><br>
-                                <input type="name"><br>
-                                <label for="e-mail">E-mail Address</label><br>
-                                <input type="e-mail"><br>
-                                <textarea name="" id="" cols="30" rows="5" class="mt-4">write out your enquiries</textarea><br>
-                                <input type="Submit" value="Submit">
-                            </form>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-12">
-                    <div class="card bg-dark">
-                            <div class="eight-right-content">
-                                <h4>Head Office</h4>
-                                <address class="mt-2"><i class="fa-solid fa-location-dot"></i> No. 1 ACAEDF crescent, Ikot-Afaha, Eket, Akwa-Ibom</address>
-                                <p class="mt-2"><i class="fa-solid fa-phone"></i> 08139781147 or +1 888267</p>
-                                <h4 class="mt-4">Branch Office</h4>
-                                <address class="mt-2"><i class="fa-solid fa-location-dot"></i> 01, Olowu street, Power-line Bus-stop, Isheri-olofin, Lagos</address>
-                                <p class="mt-2"><i class="fa-solid fa-phone"></i> 08034683508 or +1 888292</p>
-                            </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <footer>
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">FoodMania <i class="fa-solid fa-kitchen-set"></i></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                  </li>
-                </ul>
-                <form class="d-flex">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                          <a class="nav-link" aria-current="page" href="#">Subscribe</a>
-                        </li>
-                      </ul>
-                  <input class="form-control me-2" type="search" placeholder="Subscribe to our channel" aria-label="Search">
-                </form>
+    <section class="eight bg-dark" >
+      <div class="container py-5">
+          <h3 class="text-secondary">Contact US</h3>
+          <div class="row text-light">
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                  <div class="card bg-dark border-0">
+                          <h5>Reach out to us today</h5>
+                          <form action="">
+                              <label for="name">Full Name</label><br>
+                              <input type="name" class="bg-light"><br>
+                              <label for="e-mail">E-mail Address</label><br>
+                              <input type="e-mail"><br>
+                              <textarea name="" id="" cols="30" rows="5" class="mt-4">write out your enquiries</textarea><br>
+                              <input type="Submit" value="Submit">
+                          </form>
+                  </div>
               </div>
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                  <div class="card bg-dark border-0">
+                          <div class="eight-right-content mx-auto" style="width: 80%;">
+                              <h4>Head Office</h4>
+                              <address class="mt-2"><i class="fa-solid fa-location-dot"></i> No. 1 ACAEDF crescent, Ikot-Afaha, Eket, Akwa-Ibom</address>
+                              <p class="mt-2"><i class="fa-solid fa-phone"></i> 08139781147 or +1 888267</p>
+                              <h4 class="mt-4">Branch Office</h4>
+                              <address class="mt-2"><i class="fa-solid fa-location-dot"></i> 01, Olowu street, Power-line Bus-stop, Isheri-olofin, Lagos</address>
+                              <p class="mt-2"><i class="fa-solid fa-phone"></i> 08034683508 or +1 888292</p>
+                          </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  <footer>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light border-top border-light">
+          <div class="container-fluid">
+            <a class="navbar-brand fs-4 fw-bold text-secondary" href="#">FoodMania <i class="fa-solid fa-kitchen-set text-secondary fs-3"></i></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+              </ul>
+              <form class="d-flex">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Subscribe</a>
+                      </li>
+                    </ul>
+                <input class="form-control me-2" type="search" placeholder="Subscribe to our channel" aria-label="Search">
+              </form>
             </div>
-        </nav>
-    </footer>
-    <script src="Swiper/swiper-bundle.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="index.js"></script>
+          </div>
+      </nav>
+  </footer>
+  <script src="js/aos.js"></script>
+  <script src="Swiper/swiper-bundle.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+  <script src="index.js"></script>
+  <script>
+      AOS.init();
+  </script>
 </body>
 </html>
