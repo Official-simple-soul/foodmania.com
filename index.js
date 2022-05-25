@@ -2,7 +2,7 @@ const swiper1 = new Swiper('.swiper1', {
   // Optional parameters
   direction: 'vertical',
   loop: true,
-  effect: 'flip',
+  effect: 'card',
 
   autoplay: {
     delay: 3000,
