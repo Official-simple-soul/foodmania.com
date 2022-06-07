@@ -21,7 +21,7 @@
 
   </style>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
       <a class="navbar-brand fs-4 fw-bold" href="#">FoodMania <i class="fa-solid fa-kitchen-set text-secondary fs-3"></i></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -59,7 +59,7 @@
         </form>
       </div>
     </div>
-</nav>
+  </nav>
 <section class="one-about py-5">
   <div class="one-about-content text-start text-sm-center text-md-start px-5 mx-auto width-75 py-5" data-aos="zoom-out" data-aos-duration="1500">
       <h1 class="fw-bold text-light display-1">ABOUT</h1>
@@ -68,7 +68,7 @@
     <section class="five py-5 text-center bg-light">
       <div class="container">
         <div class="row py-5">
-          <div class="col-lg-4 col-md-12 col-sm-12 mx-auto">
+          <div class="col-lg-4 col-md-12 col-sm-12 ps-2 mx-auto">
             <div class="card border-0 shadow rounde-3" data-aos="fade-up" data-aos-duration="2000">
               <h2 class="border border-1 px-0 py-4 fw-bold bg-warning">ABOUT FOODMANIA</h2>
               <p>FoodMania is a leading global online food delivery company, connecting tens of thousands of consumers with over 600 local restaurants through our websites and apps. We offer an online marketplace where consumers, food businesses, and delivery agents meet in major cities of Nigeria.
@@ -121,13 +121,25 @@
               <div class="col-lg-6 col-md-6 col-sm-12">
                   <div class="card bg-dark border-0">
                           <h5>Reach out to us today</h5>
-                          <form action="">
-                              <label for="name">Full Name</label><br>
-                              <input type="name" class="bg-light"><br>
-                              <label for="e-mail">E-mail Address</label><br>
-                              <input type="e-mail"><br>
-                              <textarea name="" id="" cols="30" rows="5" class="mt-4" placeholder="write out your enquiries"></textarea><br>
-                              <input type="Submit" value="Submit">
+                          <form>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Full Name</label>
+                                <input type="name" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                              <label for="exampleInputEmail1" class="form-label">Email address</label>
+                              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                            </div>
+                            <div class="mb-3">
+                              <label for="exampleInputPassword1" class="form-label">Password</label>
+                              <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+                            <div class="mb-3 form-check">
+                              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                              <label class="form-check-label" for="exampleCheck1">Accept T&C</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
                           </form>
                   </div>
               </div>

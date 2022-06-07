@@ -1,3 +1,9 @@
+* {
+    border: 2px red solid;
+
+}
+
+
 .one {
     background-image: url(img/pexels-jonathan-borba-2983101.jpg);
     background-size: cover;
@@ -5,4 +11,3 @@
     background-attachment: fixed;
     opacity: .85;
 }
-

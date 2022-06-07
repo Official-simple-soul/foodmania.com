@@ -12,7 +12,7 @@
     <title>FoodMania</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-light navbar-light fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
           <a class="navbar-brand fs-4 fw-bold" href="#">FoodMania <i class="fa-solid fa-kitchen-set text-secondary fs-3"></i></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,7 +50,7 @@
             </form>
           </div>
         </div>
-    </nav>
+      </nav>
     <section class="one py-5">
         <div class="one-content text-start text-sm-center text-md-start px-5 mx-auto width-75 py-5" data-aos="zoom-out" data-aos-duration="1500">
             <h1 class="fw-bold text-light display-4">FOOD AT YOUR DOOR<br class="d-small-none"> STEP</h1>
@@ -58,7 +58,7 @@
         </div>
     </section>
     <section class="two py-5 text-center bg-light">
-        <div class="container-fluid row">
+        <div class="container mx-auto row">
             <div class="col-lg-4 col-md-12 col-sm-12 mx-auto">
                 <div class="card mx-auto shadow px-3 rounde-3" data-aos="fade-up" data-aos-duration="2000">
                 <h2 class="border border-1 px-0 py-4 fw-bold bg-warning">WHAT WE DO</h2>
@@ -158,7 +158,7 @@
         </div>
     </section>
     <section class="two py-5 text-center bg-light">
-        <div class="container-fluid row">
+        <div class="container mx-auto row">
             <div class="col-lg-4 col-md-12 col-sm-12 mx-auto">
                 <div class="card border-0 shadow mx-auto rounde-3" data-aos="fade-up" data-aos-duration="2000">
                     <h2 class="border border-1 px-0 py-4 fw-bold bg-warning">ABOUT FOODMANIA</h2>
@@ -194,7 +194,7 @@
                       <!-- Slides -->
                       <div class="swiper-slide">
                         <div class="row">
-                            <div class="col-lg">
+                            <div class="col">
                                 <div class="card py-4 px-5 border-0 bg-light my-3 mx-3 shadow">
                                     <img src="img\face8.jpg" alt="" width="40%" class="mx-auto rounded-3">
                                         <h5 class="py-4"><u>Shola Fumnilayo</u></h5>
@@ -387,7 +387,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-6 bg-light">
-                    <div class="card border-0 bg-light d-sm-none mt-4 d-md-block">
+                    <div class="card border-0 bg-light d-none d-lg-block mt-4 d-md-block">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d214019.73891255585!2d7.74838587644743!3d4.633641693777217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1067c2bebd34d48b%3A0xe2be48c617d33fa0!2sEket!5e0!3m2!1sen!2sng!4v1653043987853!5m2!1sen!2sng" width="350" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mx-auto iframe" ></iframe>
                     </div>
                 </div>
@@ -401,14 +401,26 @@
                 <div class="col-lg-6 col-md-6 col-sm-12">
                     <div class="card bg-dark border-0">
                             <h5>Reach out to us today</h5>
-                            <form action="">
-                                <label for="name">Full Name</label><br>
-                                <input type="name" class="bg-light"><br>
-                                <label for="e-mail">E-mail Address</label><br>
-                                <input type="e-mail"><br>
-                                <textarea name="" id="" cols="30" rows="5" class="mt-4" placeholder="write out your enquiries"></textarea><br>
-                                <input type="Submit" value="Submit">
-                            </form>
+                            <form>
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Full Name</label>
+                                    <input type="name" class="form-control">
+                                </div>
+                                <div class="mb-3">
+                                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                                </div>
+                                <div class="mb-3">
+                                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                                  <input type="password" class="form-control" id="exampleInputPassword1">
+                                </div>
+                                <div class="mb-3 form-check">
+                                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                  <label class="form-check-label" for="exampleCheck1">Accept T&C</label>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                              </form>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12">

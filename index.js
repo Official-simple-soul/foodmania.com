@@ -168,3 +168,32 @@ const swiper5 = new Swiper('.swiper5', {
   slidesPerView: 1,
 });
 
+const swiper6 = new Swiper('.swiper6', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+  effect: 'fade',
+
+  autoplay: {
+    delay: 3000,
+  },
+
+  slidesPerView: 3,
+  
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination6',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+  
+});

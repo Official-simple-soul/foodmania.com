@@ -17,11 +17,12 @@
     opacity: .85;
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 </style>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
       <a class="navbar-brand fs-4 fw-bold" href="#">FoodMania <i class="fa-solid fa-kitchen-set text-secondary fs-3"></i></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -72,12 +73,12 @@
                 As an online food delivery marketplace, FoodMania facilitates the online ordering, payment and occasionally, fulfillment of orders. We utilize a hybrid model which builds on our marketplace heritage (where restaurants do their own delivery) and we are working on logistics capability (for select restaurants without their own delivery capabilities). This model ensures consumers have the widest possible variety of restaurants to order from.
             </p>
             <div class="row py-4 five-others">
-                <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
                 <h5>Reach out to us on social media</h5>
-                <a href="facebook.com"><i class="fa-brands fa-facebook"></i></a>
-                <a href="instagram.com"><i class="fa-brands fa-instagram"></i></a>
-                <a href="twitter.com"><i class="fa-brands fa-twitter"></i></a>
-                <a href="linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="facebook.com"><i class="fa-brands fa-facebook display-1"></i></a>
+                <a href="instagram.com"><i class="fa-brands fa-instagram display-1"></i></a>
+                <a href="twitter.com"><i class="fa-brands fa-twitter display-1"></i></a>
+                <a href="linkedin.com"><i class="fa-brands fa-linkedin display-1"></i></a>
                 
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12">
@@ -87,7 +88,7 @@
                     <input type="name"><br>
                     <label for="email">E-mail</label><br>
                     <input type="e-mail"><br>
-                    <label for="radio" class="mb-2">Want us to sent you new about our latest development</label>
+                    <label for="radio" class="mb-2">Want us to sent you news about our latest development</label>
                     <input type="checkbox"><br>
                     <input type="submit" value="submit">
                 </form>
@@ -102,13 +103,25 @@
               <div class="col-lg-6 col-md-6 col-sm-12">
                   <div class="card bg-dark border-0">
                           <h5>Reach out to us today</h5>
-                          <form action="">
-                              <label for="name">Full Name</label><br>
-                              <input type="name" class="bg-light"><br>
-                              <label for="e-mail">E-mail Address</label><br>
-                              <input type="e-mail"><br>
-                              <textarea name="" id="" cols="30" rows="5" class="mt-4" placeholder="write out your enquiries"></textarea><br>
-                              <input type="Submit" value="Submit">
+                          <form>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Full Name</label>
+                                <input type="name" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                              <label for="exampleInputEmail1" class="form-label">Email address</label>
+                              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                            </div>
+                            <div class="mb-3">
+                              <label for="exampleInputPassword1" class="form-label">Password</label>
+                              <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+                            <div class="mb-3 form-check">
+                              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                              <label class="form-check-label" for="exampleCheck1">Accept T&C</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
                           </form>
                   </div>
               </div>
